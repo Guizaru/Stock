@@ -9,15 +9,15 @@ public class Main {
         System.out.println("Welcome to the Gordura Market!");
 
         //dados do produto:
-        Estoque product;
-        product= new Estoque();
         System.out.println("First, you need to insert the info about the product: ");
         System.out.println("Please, insert the name of the product: ");
-        product.n = teclado.next();
+        String name = teclado.nextLine();
         System.out.println("Please, insert the price of the product: ");
-        product.p = teclado.nextDouble();
+        double price = teclado.nextDouble();
         System.out.println("Please, insert the quantity of the product: ");
-        product.q = teclado.nextInt();
+        int quantity = teclado.nextInt();
+
+        Estoque product = new Estoque(name, price, quantity);
 
         //impressão dos dados
         System.out.printf("Name: %s%n",product.n);
