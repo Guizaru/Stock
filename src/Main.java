@@ -9,8 +9,8 @@ public class Main {
         System.out.println("Welcome to the Gordura Market!");
 
         //dados do produto:
-        Estoque product;
-        product= new Estoque();
+        Stock product;
+        product= new Stock();
         System.out.println("First, you need to insert the info about the product: ");
         System.out.println("Please, insert the name of the product: ");
         product.n = teclado.next();
