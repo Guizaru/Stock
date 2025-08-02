@@ -2,8 +2,8 @@ public class Estoque {
     String enterName;
     double enterPrice;
     int enterQuantity;
-    public Estoque (String n, double enterPrice, int enterQuantity) {
-        this.enterName = n;
+    public Estoque (String enterName, double enterPrice, int enterQuantity) {
+        this.enterName = enterName;
         this.enterPrice = enterPrice;
         this.enterQuantity = enterQuantity;
     }
