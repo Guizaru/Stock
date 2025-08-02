@@ -11,7 +11,7 @@ public class Main {
         //product data
         Stock product;
         product = new Stock();
-        System.out.println("First, you need to insert the info about the product: ");
+        System.out.println("First, you need to insert the info about the product");
         System.out.println("Please, insert the name of the product: ");
         product.n = teclado.next();
         System.out.println("Please, insert the price of the product: ");
