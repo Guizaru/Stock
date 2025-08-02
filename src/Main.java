@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Please, insert the quantity of the product: ");
         int quantity = teclado.nextInt();
 
-        Estoque product = new Estoque(name, price, quantity);
+        Stock product = new Stock(name, price, quantity);
 
         //impressão dos dados
         System.out.printf("Name: %s%n",product.enterName);
@@ -40,3 +40,4 @@ public class Main {
         product.removeProducts(q);
         System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
     }
+}
