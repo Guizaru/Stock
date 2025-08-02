@@ -1,15 +1,19 @@
-public class Stock {
-    String n;
-    double p;
-    int q;
+public class Estoque {
+    String enterName;
+    double enterPrice;
+    int enterQuantity;
+    public Estoque (String n, double enterPrice, int enterQuantity) {
+        this.enterName = n;
+        this.enterPrice = enterPrice;
+        this.enterQuantity = enterQuantity;
+    }
     public double totalValueInStock(){
-        double firstResult;
-        return firstResult = p * q;
+        return enterPrice * enterQuantity;
     }
     public void addProducts(int q){
-        this.q = this.q + q;
+        this.enterQuantity = this.enterQuantity + q;
     }
     public void removeProducts(int q){
-        this.q = this.q - q;
+        this.enterQuantity = this.enterQuantity - q;
     }
 }
