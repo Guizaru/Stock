@@ -1,8 +1,8 @@
-public class Estoque {
+public class Stock {
     String enterName;
     double enterPrice;
     int enterQuantity;
-    public Estoque (String enterName, double enterPrice, int enterQuantity) {
+    public Stock(String enterName, double enterPrice, int enterQuantity) {
         this.enterName = enterName;
         this.enterPrice = enterPrice;
         this.enterQuantity = enterQuantity;
