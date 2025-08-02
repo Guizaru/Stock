@@ -5,10 +5,10 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner teclado = new Scanner(System.in);
 
-        //welcome message:
+        //welcome message
         System.out.println("Welcome to your Market!");
 
-        //product data:
+        //product data
         Stock product;
         product= new Stock();
         System.out.println("First, you need to insert the info about the product: ");
