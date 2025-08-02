@@ -1,4 +1,4 @@
-public class Estoque {
+public class Stock {
     String n;
     double p;
     int q;
