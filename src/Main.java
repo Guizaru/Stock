@@ -14,30 +14,27 @@ public class Main {
         String name = teclado.nextLine();
         System.out.println("Please, insert the price of the product: ");
         double price = teclado.nextDouble();
-        System.out.println("Please, insert the quantity of the product: ");
-        int quantity = teclado.nextInt();
-
-        Estoque product = new Estoque(name, price, quantity);
+        Stock product = new Stock(name, price);
 
         //impressão dos dados
-        System.out.printf("Name: %s%n",product.n);
-        System.out.printf("Price: %.2f $%n",product.p);
-        System.out.printf("Quantity in stock: %d%n",product.q);
+        System.out.printf("Name: %s%n",product.enterName);
+        System.out.printf("Price: %.2f $%n",product.enterPrice);
+        System.out.printf("Quantity in stock: %d%n",product.enterQuantity);
 
         //preço inicial
         product.totalValueInStock();
-        System.out.printf("Product data: %s,"+" %d units,"+" Total: $ %.2f%n", product.n, product.q, product.totalValueInStock());
+        System.out.printf("Product data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
 
         //adição
         System.out.println("Enter the number of products to be added in stock: ");
         int q = teclado.nextInt();
         product.addProducts(q);
-        System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.n, product.q, product.totalValueInStock());
+        System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
 
         //remoção
         System.out.println("Enter the number of products to be removed from stock: ");
         q = teclado.nextInt();
         product.removeProducts(q);
-        System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.n, product.q, product.totalValueInStock());
+        System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
     }
 }
