@@ -6,7 +6,7 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
 
         //mensagem de boas-vindas:
-        System.out.println("Welcome to the Market!");
+        System.out.println("Welcome to the Market haha!");
 
         //dados do produto:
         System.out.println("First, you need to insert the info about the product: ");
