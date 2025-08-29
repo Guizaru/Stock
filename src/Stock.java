@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class Stock {
     String enterName;
@@ -21,5 +20,16 @@ public class Stock {
     }
     public void removeProducts(int q){
         this.enterQuantity = this.enterQuantity - q;
+    }
+
+    @Override
+    public String toString() {
+        return enterName
+                +", "
+                + String.format("Price: $ %.2f", enterPrice)
+                +", "
+                +enterQuantity
+                +" units, Total: $"
+                + String.format("%.2f", totalValueInStock());
     }
 }
