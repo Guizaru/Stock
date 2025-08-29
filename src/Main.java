@@ -16,21 +16,17 @@ public class Main {
         int quantity = teclado.nextInt();
         Stock product = new Stock(name, price, quantity);
 
-        System.out.printf("Name: %s%n",product.enterName);
-        System.out.printf("Price: %.2f $%n",product.enterPrice);
-        System.out.printf("Quantity in stock: %d%n",product.enterQuantity);
-
         product.totalValueInStock();
-        System.out.printf("Product data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
+        System.out.println("Date added: "+ product);
 
         System.out.print("Enter the number of products to be added in stock: ");
         int q = teclado.nextInt();
         product.addProducts(q);
-        System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
+        System.out.println("Updated data: "+ product);
 
         System.out.print("Enter the number of products to be removed from stock: ");
         q = teclado.nextInt();
         product.removeProducts(q);
-        System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
+        System.out.println("Updated data: "+ product);
     }
 }
