@@ -23,13 +23,11 @@ public class Main {
         product.totalValueInStock();
         System.out.printf("Product data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
 
-        //adição
         System.out.print("Enter the number of products to be added in stock: ");
         int q = teclado.nextInt();
         product.addProducts(q);
         System.out.printf("Updated data: %s,"+" %d units,"+" Total: $ %.2f%n", product.enterName, product.enterQuantity, product.totalValueInStock());
 
-        //remoção
         System.out.print("Enter the number of products to be removed from stock: ");
         q = teclado.nextInt();
         product.removeProducts(q);
