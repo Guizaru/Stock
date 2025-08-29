@@ -22,7 +22,7 @@ public class Stock {
         this.enterQuantity = this.enterQuantity - q;
     }
 
-    @Override
+
     public String toString() {
         return enterName
                 +", "
