@@ -22,7 +22,6 @@ public class Stock {
         this.enterQuantity = this.enterQuantity - q;
     }
 
-
     public String toString() {
         return enterName
                 +", "
